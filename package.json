@@ -1,0 +1,35 @@
+{
+  "name": "urbanick-back",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luloinc/urbanick-back.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luloinc/urbanick-back/issues"
+  },
+  "homepage": "https://github.com/luloinc/urbanick-back#readme",
+  "dependencies": {
+    "aws-sdk": "^2.471.0",
+    "aws-serverless-express": "^3.3.6",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "pg": "^7.11.0",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^5.8.7"
+  },
+  "devDependencies": {
+    "claudia": "^5.5.0",
+    "nodemon": "^1.19.1"
+  }
+}

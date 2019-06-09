@@ -1,0 +1,10 @@
+{
+  "lambda": {
+    "role": "urbanick-back-executor",
+    "name": "urbanick-back",
+    "region": "us-east-1"
+  },
+  "api": {
+    "id": "vbmc1istu3"
+  }
+}
