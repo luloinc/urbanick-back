@@ -17,6 +17,24 @@ module.exports = {
       email: {
         type: Sequelize.STRING
       },
+      phone: {
+        type: Sequelize.BIGINT
+      },
+      stay: {
+        type: Sequelize.STRING
+      },
+      city: {
+        type: Sequelize.STRING
+      },
+      guests: {
+        type: Sequelize.INTEGER
+      },
+      checkIn: {
+        type: Sequelize.DATE
+      },
+      checkOut: {
+        type: Sequelize.DATE
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE

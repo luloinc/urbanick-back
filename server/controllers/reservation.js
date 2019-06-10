@@ -10,14 +10,28 @@ module.exports = {
     return Reservation.create( {
       firstName: req.body.firstName,
       lastName: req.body.lastName,
-      email: req.body.email
+      email: req.body.email,
+      phone: req.body.phone,
+      stay: req.body.stay,
+      city: req.body.city,
+      guests: req.body.guests,
+      checkIn: req.body.checkIn,
+      checkOut: req.body.checkOut
     } )
       .then( item => {
         
         console.log( "Reservation successfully created, sending verification email" );
         
         var bodyMessage = "Hola " + item.firstName + ",<br /> \
-          Tu solicitud de reserva se ha creado exitosamente y se encuentra pendiente por verificación.";
+          Tu solicitud de reserva se ha creado exitosamente y se encuentra pendiente de verificación.<br /><br /> \
+          Nombre: " + item.firstName + " " + item.lastName + "<br /> \
+          Email: " + item.email + "<br /> \
+          Teléfono: " + item.phone + "<br /> \
+          Tipo de estadía: " + item.stay + "<br /> \
+          Ciudad: " + item.city + "<br /> \
+          Invitados: " + item.guests + "<br /> \
+          Check in: " + item.checkIn + "<br /> \
+          Check out: " + item.checkOut;
 
         // Create sendEmail params 
         var params = {
