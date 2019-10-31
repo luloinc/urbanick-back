@@ -26,7 +26,7 @@
     "morgan": "^1.9.1",
     "pg": "^7.11.0",
     "pg-hstore": "^2.3.3",
-    "sequelize": "^5.8.7"
+    "sequelize": "^5.15.1"
   },
   "devDependencies": {
     "claudia": "^5.5.0",
